@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/image_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/image1" />
+
+    <ImageView
+        android:id="@+id/image_view2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/image2" />
+
+    <ImageView
+        android:id="@+id/image_view3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/image3" />
+
+    <Button
+        android:id="@+id/decode_gif_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onDecodeGIF"
+        android:text="decode GIF" />
+
+    <Button
+        android:id="@+id/decode_gif_using_iterator_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/decode_gif_btn"
+        android:onClick="onDecodeGIFUsingIterator"
+        android:text="decode GIF using iterator" />
+
+    <Button
+        android:id="@+id/encode_gif_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/decode_gif_btn"
+        android:onClick="onEncodeGIF"
+        android:text="encode GIF" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/decode_gif_btn"
+        android:layout_toRightOf="@id/encode_gif_btn"
+        android:onClick="onDisableDithering"
+        android:text="disable dithering" />
+</RelativeLayout>
